@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --port=1111",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@vueuse/core": "^9.3.0",
+    "@vueuse/nuxt": "^9.3.0",
+    "nuxt": "3.0.0-rc.11"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.3",
+    "sass": "^1.55.0"
+  }
+}
