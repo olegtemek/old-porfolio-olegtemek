@@ -23,7 +23,8 @@
       v-else
     >
       <div class="card__project">
-        <img
+        <nuxt-img
+          width="200"
           :src="config.public.api + 'storage/images/' + project.image"
           alt=""
         />

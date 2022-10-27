@@ -2,7 +2,7 @@
   <div class="about">
     <div class="container">
       <div class="about__wrapper">
-        <img
+        <nuxt-img
           :src="config.public.api + 'storage/images/' + store.getImage"
           alt="me"
           v-if="store.getImage"

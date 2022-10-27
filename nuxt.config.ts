@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      api: 'http://localhost/'
+      api: 'https://portfolio.olegtemek.kz/'
     }
   },
   modules: [
@@ -16,6 +16,7 @@ export default defineNuxtConfig({
         ],
       }],
     '@vueuse/nuxt',
+    '@nuxt/image-edge',
 
   ],
   app: {
