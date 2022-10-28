@@ -6,6 +6,9 @@
           :src="config.public.api + 'storage/images/' + store.getImage"
           alt="me"
           v-if="store.getImage"
+          format="webp"
+          sizes="sm:10px md:10px lg:302px"
+          loading="lazy"
         />
         <div class="">
           <CardComponent

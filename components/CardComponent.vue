@@ -24,9 +24,11 @@
     >
       <div class="card__project">
         <nuxt-img
-          width="200"
           :src="config.public.api + 'storage/images/' + project.image"
           alt=""
+          sizes="sm:220vw md:220px lg:410px"
+          loading="lazy"
+          format="webp"
         />
         <div class="card__project-text">
           <h4>{{ project.title }}</h4>

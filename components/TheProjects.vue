@@ -24,8 +24,11 @@
 import { useProjects } from "@/store/projects.js";
 const store = useProjects();
 const config = useRuntimeConfig();
+const emit = defineEmits(["loaded"]);
 onMounted(() => {
-  store.fetchProjects(config.public.api);
+  store.fetchProjects(config.public.api).then(() => {
+    emit("loaded");
+  });
 });
 
 const projects = computed(() => {

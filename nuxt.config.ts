@@ -22,7 +22,6 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'OlegTemekPortfolio',
-
     },
   },
   css: ["@/assets/scss/main.scss"],
